@@ -26,10 +26,10 @@ class RefreshWhoisSrv:
     def refresh(self):
         dict = {}
         try:
-            db = pymysql.connect("10.245.146.37",
-                                 "root",
-                                 "platform",
-                                 "whois_support",
+            db = pymysql.connect("xx.x.x.x",
+                                 "xxxx",
+                                 "xxxxx",
+                                 "xxxxx",
                                  charset="utf8")
             cursor = db.cursor()
             sql = "select Punycode, whois_addr from whois_tld_addr_new"
