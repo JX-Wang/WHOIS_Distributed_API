@@ -21,4 +21,4 @@ wud@wangjunx.top wjx.wud@gmail.com
 
 Harbin Institute of Technology At WeiHai
 
-[wjx的博客](http://www.wangjunx.top)
+[wjx的博客](http://www.wudly.cn)
