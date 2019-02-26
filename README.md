@@ -13,7 +13,7 @@
 
 ![](https://github.com/WUD-51/WHOIS-API/blob/master/Demo.jpg)
 
-# API_Server（主节点）
+## API_Server（主节点）
 
 This Server is used for sending domain's whois query to Client machine
 
