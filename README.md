@@ -45,7 +45,8 @@ This Server is used for sending domain's whois query to Client
       ##### 4.1 proxy在发送时是可选的，不加proxy，API从节点也可进行whois探测，不过为了保证稳定，添加代理是一种可持续探测的必要方法  
       
       
-## API_Client (从节点)
+## API_Client (从节点)  
+  The Client will get whois data from whois server  
 
 ### 说明：从节点也是基于flask和gevent的高性能并发探测系统
 
