@@ -3,14 +3,14 @@
 🕷 一个基于Flask的分布式Whois获取Api
 
 ### USE
-```curl http://ip:port/WHOIS/<domain>```
+不添加whois服务器```curl http://ip:port/WHOIS/<domain>```
 
-```curl http://ip:port/WHOIS/<domain:whois_srv>```
+添加whois服务器```curl http://ip:port/WHOIS/<domain:whois_srv>```
 
 
 
 ### Mode
-
+  mode示意图重做中...
 ![](https://github.com/WUD-51/WHOIS-API/blob/master/Demo.jpg)
 
 ## API_Server（主节点）
@@ -27,7 +27,7 @@ This Server is used for sending domain's whois query to Client
       ##### 1.2 若从出现节点崩溃的情况，主节点则会向管理员发送邮件，邮件内容包括崩溃的节点的IP地址和出错节点的数量，管理员可以通过邮件内容找到出错的节点并进行维护
   2. 并发：
       ##### 2.1 基于协程```gevent monkey_patch()```和 ```gevent WSGIServer```的高性能并发模型，单节点单核日处理300w+的域名数据探测，数据正确率为约为80%
-  3. 多线程:
+  3. 多线程:  
       通过开启多线程来分别进行分发，主从节点间的心跳感知的操作(基于schedule模块儿的定时心跳感知)
       ```python
       API_process = multiprocessing.Process(target=start, name="API SERVICE")
@@ -42,7 +42,7 @@ This Server is used for sending domain's whois query to Client
         http_server = WSGIServer(('', _port), app)
         http_server.serve_forever()
   4. proxy：
-      ##### 3.1 proxy在发送时是可选的，不加proxy，API从节点也可进行whois探测，不过为了保证稳定，添加代理是一种可持续探测的必要方法  
+      ##### 4.1 proxy在发送时是可选的，不加proxy，API从节点也可进行whois探测，不过为了保证稳定，添加代理是一种可持续探测的必要方法  
       
       
 ## API_Client (从节点)
