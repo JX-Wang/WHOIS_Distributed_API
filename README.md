@@ -1,6 +1,5 @@
 # WHOIS API Service
 ---  
-### 目前存在的问题：高并发导致数据不安全
 🕷 一个基于Flask的分布式Whois获取Api
 
 ### USE
