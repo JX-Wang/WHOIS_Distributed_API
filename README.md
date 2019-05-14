@@ -6,7 +6,7 @@
 更高效的获取WHOIS信息，并且要保证API服务的稳定，不能停止服务
 
 ### Mode
-![](https://github.com/WUD-51/WHOIS-API/blob/master/Demo.jpg)
+![](https://github.com/WUD-51/WHOIS-API/blob/master/Demo.jpg)  
 设计模型采用分布式架构，主节点分发任务，子节点群探测的模型进行WHOIS数据的探测，方便管理与维护
 
 ### 使用
