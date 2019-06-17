@@ -21,6 +21,4 @@
 ### 效率
    目前测试过10w域名的whois请求，采用4个API从节点进行探测，探测速度约```0.06s/个```，whois信息正确率```95%+```
    
-#### Contact
-wjx.wud@gmail.com  
-[wjx的博客](http://www.wudly.cn)
+[My Blog](http://www.wudly.cn)
